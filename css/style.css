@@ -1,9 +1,8 @@
-/* Background + layout */
 body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background: #1a1a2e; /* deep indigo */
+  background: #1a1a2e; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -11,17 +10,15 @@ body {
   color: #fff;
 }
 
-/* Centered container */
 .container {
   width: 100%;
   max-width: 600px;
-  background: #16213e; /* dark purple-blue */
+  background: #16213e; 
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
-/* Title */
 h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -30,7 +27,6 @@ h1 {
   letter-spacing: 1px;
 }
 
-/* Fieldsets */
 fieldset {
   border: 1px solid #2e3a59;
   padding: 20px;
@@ -46,7 +42,6 @@ legend {
   text-align: center;
 }
 
-/* Labels */
 label {
   display: block;
   margin-bottom: 6px;
@@ -55,7 +50,6 @@ label {
   color: #dcdcff;
 }
 
-/* Inputs */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -78,7 +72,6 @@ textarea::placeholder {
   color: #9aa3c2;
 }
 
-/* Radio + checkbox groups */
 .radio-group,
 .checkbox-group {
   text-align: center;
@@ -91,7 +84,6 @@ textarea::placeholder {
   font-weight: 500;
 }
 
-/* Submit button */
 button {
   width: 100%;
   padding: 14px;
@@ -108,3 +100,4 @@ button {
 button:hover {
   background: #3d55d6;
 }
+
