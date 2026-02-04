@@ -4,37 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>User Registration Form</title>
-  <link rel="stylesheet" href="css/style.css">
 
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Main centered container -->
   <div class="container">
+
+    <!-- Page title -->
     <h1>User Registration</h1>
 
+    <!-- Registration form -->
     <form method="post">
 
+      <!-- Personal info section -->
       <fieldset>
         <legend>Personal Information</legend>
 
+        <!-- First name input -->
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" name="firstName" required placeholder="First Name">
 
+        <!-- Last name input -->
         <label for="lastName">Last Name</label>
         <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
 
+        <!-- Email input -->
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required placeholder="you@example.com">
 
+        <!-- Password input -->
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required minlength="8" placeholder="Min. 8 characters">
 
+        <!-- Confirm password input -->
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="Retype password">
 
+        <!-- Date of birth input -->
         <label for="dob">Date of Birth</label>
         <input type="date" id="dob" name="dob" required>
 
+        <!-- Gender radio buttons -->
         <label>Gender</label>
         <div class="radio-group">
           <label><input type="radio" name="gender" value="male" required> Male</label>
@@ -43,15 +56,20 @@
         </div>
       </fieldset>
 
+      <!-- Preferences section -->
       <fieldset>
         <legend>Preferences</legend>
 
         <div class="checkbox-group">
+          <!-- Newsletter checkbox -->
           <label><input type="checkbox" id="newsletter" name="newsletter" value="yes"> Subscribe to Newsletter</label>
+
+          <!-- Terms checkbox -->
           <label><input type="checkbox" id="terms" name="terms" value="agree" required> I agree to the <a href="#">Terms & Conditions</a></label>
         </div>
       </fieldset>
 
+      <!-- Country dropdown -->
       <label for="country">Country</label>
       <select id="country" name="country" required>
         <option value="">-- Select Country --</option>
@@ -60,9 +78,11 @@
         <option value="uk">United Kingdom</option>
       </select>
 
+      <!-- Comments box -->
       <label for="comments">Comments</label>
       <textarea id="comments" name="comments" rows="4" placeholder="Any additional comments..."></textarea>
 
+      <!-- Submit button -->
       <button type="submit">Submit</button>
 
     </form>
