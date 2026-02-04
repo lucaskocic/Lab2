@@ -1,0 +1,110 @@
+/* Background + layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #1a1a2e; /* deep indigo */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  color: #fff;
+}
+
+/* Centered container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #16213e; /* dark purple-blue */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e0e0ff;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #2e3a59;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background: #0f1730;
+}
+
+legend {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #a8b4ff;
+  text-align: center;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-align: center;
+  color: #dcdcff;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #3b4a6b;
+  background: #1f2a48;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa3c2;
+}
+
+/* Radio + checkbox groups */
+.radio-group,
+.checkbox-group {
+  text-align: center;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: block;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #4e6bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: #3d55d6;
+}
